@@ -1,0 +1,397 @@
+/* Super nav styling */
+
+.super-nav {
+    height: 30px;
+    background-color: #444444;
+    padding: 0 30px;
+}
+
+.contain-960 {
+    max-width: 960px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.sn-social-button img {
+    height: 26px;
+    width: 26px;
+    margin-top: 2px
+}
+
+.sn-hire-cta {
+    position: absolute;
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.sn-hire-cta a {
+    display: inline-block;
+    font-family: 'Shadows Into Light', cursive;
+    color: #F7F06A;
+    font-size: 22px;
+    padding: 0 30px 10px 30px;
+}
+
+.sn-resources-button {
+    float: right;
+    background-color: #235434;
+    color: white;
+    height: 17px;
+    padding: 4px 15px 4px 15px;
+    border: white solid 1px;
+    border-radius: 4px;
+    margin-top:1px;
+}
+
+/* Main Navigation */
+
+.main-nav {
+    
+    height: 40px;
+    padding-top: 5px;
+    background-color: #235434;
+}
+
+.main-nav ul {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.main-nav ul li {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    max-width: 192px;
+    /* padding: 0 20px; */
+}
+
+.main-nav a {
+    color: white;
+}
+
+.main-nav a:hover {
+/* need help here. cannot figure out why this does not work */
+    text-decoration: underline;
+}
+
+.nav-logo {
+    position: absolute;
+    margin-top:-65px;
+    left: 35px;
+    z-index: 999;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 32px;
+    padding: 20px 0px;
+}
+
+h2 {
+    font-size: 28px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    padding: 0 0 20px 0;
+    font-size: 20px;
+}
+
+
+
+/* Section 1 - Hero Slider */
+
+.hero-slider {
+    min-height: 600px;
+    background: url('./images/denver-hero-green.jpg');
+    position:relative;
+}
+
+.slider-cta {
+    position: absolute;
+    max-width: 700px;
+    top: 100px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px
+
+}
+
+.cta-button {
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-family: 'Courgette', cursive;
+    border-radius: 6px;
+    background-color: #F7F06A;
+    border-color: #F7F06A;
+    float: right;
+    margin-right: 100px;
+}
+
+
+
+
+/* Section 2 - Past Clients */
+
+.past-clients {
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.past-clients img {
+    display; inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 18px 0 18px
+}
+
+.past-clients h2 {
+    color: #232323;
+}
+
+/* Section 3 - Mission */
+
+.mission {
+    min-height: 200px;
+    background-color: #444444;
+    text-align: center;
+    padding: 30px 0;
+    color: gainsboro;
+}
+
+/* Section 4 - Hilight Tabs */
+
+.highlight-tabs h3 {
+    text-align: center;
+}
+
+.highlight-tabs a {
+    color: #235434;
+}
+
+/* tabs */
+
+.highlight-tabs {
+    min-height: 400px;
+}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+ul.tab li {
+    float: left;
+    width: 25%;
+
+}
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+}
+
+ul.tab li a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    }
+
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent li {
+    width: 33%;
+    padding-top: 30px;
+}
+
+/* blockquote slider */
+.tsl {
+	padding:1em;
+}
+.tsl-list {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+.tsl-item {
+	position:relative;
+	top:0;
+	left:100%;
+	margin-left:-100%;
+	width: 100% !important;
+	float:left;
+	animation: tsl-fade-in-out 50s infinite;
+	animation-play-state:running;
+}
+
+.tsl-item + .tsl-item {
+	opacity:0;
+}
+
+.tsl-item:nth-child(2) {
+	animation-delay: -40s;
+}
+.tsl-item:nth-child(3) {
+	animation-delay: -30s;
+}
+.tsl-item:nth-child(4) {
+	animation-delay: -20s;
+}
+.tsl-item:nth-child(5) {
+	animation-delay: -10s;
+}
+
+@keyframes tsl-fade-in-out {
+	0% {
+		opacity:0;
+		z-index:2;
+	}
+	1% {
+		opacity:1;
+		z-index:2;
+	}
+	20% {
+		opacity:1;
+	}
+	21% {
+		opacity:0;
+		z-index:1;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+.tsl-content {
+	font: 12px/1.4 Arial;
+}
+.tsl-content p {
+	margin-top:0;
+}
+.tsl-meta {
+	font: 11px/1.4 Arial;
+	text-align:right;
+}
+.tsl-meta p {
+	margin-bottom:0;
+}
+
+/* project tiles */
+
+.highlight-tabs img {
+    width: 80%;
+    padding: 30px 0 30px 0;
+
+}
+
+.tabcontent li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* Section 5 - About */
+
+.about {
+    padding: 30px;
+    background-color: #235434;
+    text-align: center;
+    color: gainsboro;
+}
+
+/* Section 6 - Contact Form */
+
+.contact {
+    min-height: 400px;
+}
+
+.contact li {
+    width: 33%;
+    display: inline-block;
+}
+
+.contact input {
+    width: 60%;
+    padding: 5px;
+    margin: 15px;
+}
+
+.contact textarea {
+    width: 100%;
+    margin: 20px;
+}
+
+.contact button {
+    margin: auto;
+    float: none;
+    display; block;
+}
+
+/* Footer */
+
+footer {
+    background-color: #444444;
+    padding: 30px;
+}
+
+footer img {
+    width: 40px;
+}
+
+.footer-column {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+footer a {
+    color: white;
+}
+
+footer li, footer img {
+    padding: 10px;
+}
+
+footer button {
+    margin: 0 !important;
+}
+
+/* not working. could use some help */
+footer .centerdiv {
+    display: block;
+    margin: auto;
+}
